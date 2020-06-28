@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .a {
+      width: 100vh;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <!-- antd -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.3.1/antd.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.3.1/antd.js"></script> -->
+    <script src="./react/react.development.js"></script>
+    <script src="./react/react-dom.development.js"></script>
+    <script src="./react/babel.min.js"></script>
+    <script src="./antd/antd.css"></script>
+    <script src="./antd/antd.js"></script>
+    <script src="./antd/moment.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/app.css" />
+    <title>react</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Clock -->
+    <script type="text/babel" src="./components/clock/clock.jsx"></script>
+    <script type="text/babel">
+      const App = (
+        <div className="app">
+          <header className="app-header">
+            <div className="app-header-body">
+              <div className="app-header-body-logo">
+                <antd.Button type="primary">open</antd.Button>
+              </div>
+            </div>
+          </header>
+          <div className="app-body">
+            <div className="app-body-main">
+              <div className="app-body-main-content">
+                <div>
+                  <Clock />
+                </div>
+              </div>
+              <footer className="app-footer">
+                <h1>ndzy</h1>
+              </footer>
+            </div>
+          </div>
+        </div>
+      );
+      ReactDOM.render(App, document.getElementById('root'));
+    </script>
+  </body>
+</html>
